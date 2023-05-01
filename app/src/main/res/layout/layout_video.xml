@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imagevieww"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toStartOf="@id/completedCheckBox"
+                android:layout_toEndOf="@id/imagevieww"
+                android:text="Now You Can Understand Holy Quran By Listening | Free Online Classes"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/completedCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:checked="true" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
